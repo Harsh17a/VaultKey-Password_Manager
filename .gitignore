@@ -1,0 +1,28 @@
+# 🔁 Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# 🧪 Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# 📦 PyInstaller build artifacts
+build/
+dist/
+*.spec
+
+# 🔐 Sensitive app data (stored in development assets folder)
+assets/password_data.json
+assets/secret.key
+
+# 💻 System files
+.DS_Store
+Thumbs.db
+
+# 🗃️ Windows AppData user storage (used in .exe mode)
+# NOTE: Use forward slashes and wildcard to prevent platform mismatch
+/AppData/Roaming/VaultKey/
+/**/AppData/Roaming/VaultKey/
