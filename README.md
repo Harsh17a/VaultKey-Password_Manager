@@ -10,10 +10,11 @@ A sleek and secure **open-source** desktop password manager called `VaultKey` �
 ![Repo Size](https://img.shields.io/github/repo-size/Harsh17a/VaultKey-Password_Manager)
 ![Last Commit](https://img.shields.io/github/last-commit/Harsh17a/VaultKey-Password_Manager)
 ![Issues](https://img.shields.io/github/issues/Harsh17a/VaultKey-Password_Manager)
+[![Download EXE](https://img.shields.io/badge/Download-.exe-blue?logo=windows)](https://github.com/Harsh17a/VaultKey-Password_Manager/releases/latest)
 
 ---
 
-# ✨ Features
+## ✨ Features
 
 - 🌙 **Dark Mode & Light Mode** toggle with icon-based switch (🌞 / 🌚)
 - 🔐 **AES Encryption** using `cryptography` to securely store passwords
@@ -55,36 +56,37 @@ A sleek and secure **open-source** desktop password manager called `VaultKey` �
  - "secret.key"
 
 in the system folder:
-```bush
-    C:\Users\<YourUsername>\AppData\Roaming\VaultKey\
+```bash
+C:\Users\<YourUsername>\AppData\Roaming\VaultKey\
 ```
 
 ---
 
-# 🚀 Getting Started
-
+## 🚀 Getting Started
 
 💡 **Pro Tip**:  
 Use `python main.py` during development for faster testing. Build the `.exe` only for final deployment or sharing with others.
 
----
-
-
 ### 1. Clone the repository
-    git clone https://github.com/HarshBelekar/VaultKey-Password_manager.git
+```bash
+git clone https://github.com/HarshBelekar/VaultKey-Password_manager.git
 
-    cd VaultKey-Password_manager
-
+cd VaultKey-Password_manager
+```
 
 ### 2. Install dependencies
-    pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 ### 3. Run the app
-    python main.py
+```bash
+python main.py
+```
 
 ---
 
-# 🛠 Technologies Used
+## 🛠 Technologies Used
 
  -  **tkinter** — GUI framework
  -  **pyperclip** — Clipboard integration
@@ -93,18 +95,18 @@ Use `python main.py` during development for faster testing. Build the `.exe` onl
 
 ---
 
-# 🧪 Build Executable (Windows)
+## 🧪 Build Executable (Windows)
 
  - Use PyInstaller to convert the app into a standalone executable:
 
 ```bash
-    python -m PyInstaller --onefile --windowed --icon=assets/logo.ico --add-data "assets;assets" --name VaultKey main.py
+python -m PyInstaller --onefile --windowed --icon=assets/logo.ico --add-data "assets;assets" --name VaultKey main.py
 ```
 👉 The .exe file will be located in the dist/ folder after the build.
 
 ---
 
-# ⚠️ Antivirus Warning (False Positive)
+## ⚠️ Antivirus Warning (False Positive)
 
 When building the `VaultKey.exe` file using PyInstaller, some antivirus software (especially **Windows Defender**) might flag the generated `.exe` as a **potential threat**.
 
@@ -120,16 +122,16 @@ This is a **false positive**, triggered by:
 To successfully build the `.exe` without triggering antivirus errors:
 
 1. ⚙️ I **excluded the project folder** from Windows Defender using:
-   - Settings → Privacy & Security → Windows Security → Virus & Threat Protection → Manage Settings → **Add Exclusion**
+ - Settings → Privacy & Security → Windows Security → Virus & Threat Protection → Manage Settings → **Add Exclusion**
 
 2. 🔄 Rebuilt the `.exe` using PyInstaller:
-   ```bash
-   python -m PyInstaller --onefile --windowed --icon=assets/logo.ico --add-data "assets;assets" --name VaultKey main.py
-   ```
+```bash
+python -m PyInstaller --onefile --windowed --icon=assets/logo.ico --add-data "assets;assets" --name VaultKey main.py
+```
 
 ---
 
-# 🛡️ Security Notes
+## 🛡️ Security Notes
 
  - All saved passwords are **encrypted** using a secure **Fernet key (AES-128)** via the `cryptography` library.
 
@@ -139,7 +141,7 @@ To successfully build the `.exe` without triggering antivirus errors:
 
 ---
 
-# 📂 Data Storage Location
+## 📂 Data Storage Location
 
 **VaultKey** stores sensitive data in the user's system directory, not in the `assets/` folder.
 
@@ -158,7 +160,18 @@ To successfully build the `.exe` without triggering antivirus errors:
 
 ---
 
-# 📦 Future Improvements
+## 🧾 Download
+
+You can download the standalone executable version (no Python needed) for Windows:
+
+👉 [Download VaultKey.exe](https://github.com/Harsh17a/VaultKey-Password_Manager/releases/latest/download/VaultKey-Windows.zip)  
+_(Hosted in GitHub Releases)_
+
+💡 No installation required! Just extract and run the `.exe` file.
+
+---
+
+## 📦 Future Improvements
 
  - [ ] **Export/Import Encrypted Backups**  
   Easily save and load encrypted password backups locally or to the cloud.
@@ -171,7 +184,7 @@ To successfully build the `.exe` without triggering antivirus errors:
 
 ---
 
-# 📄 License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
